@@ -13,11 +13,12 @@
     	z-index: 3;
     	left: -30%;
     	transition: all 0.4s ease-out;
+    	overflow-y:scroll; 
     }
 	#right{
 		width:30%;
 		height:100%;
-		background-color: blue;
+		background-color: #F5F0F0;
 		position: fixed;
 		z-index:3;
 		right: -30%;
