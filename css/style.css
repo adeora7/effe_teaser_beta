@@ -1,0 +1,95 @@
+*{
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+}
+
+@media only screen and (min-width: 1000px) {
+    #left{
+    	width:30%;
+    	height:100%;
+    	background-color: #F5F0F0;
+    	position: fixed;
+    	z-index: 3;
+    	left: -30%;
+    	transition: all 0.4s ease-out;
+    	overflow-y:scroll; 
+    }
+	#right{
+		width:30%;
+		height:100%;
+		background-color: #F5F0F0;
+		position: fixed;
+		z-index:3;
+		right: -30%;
+    	transition: all 0.4s ease-out;
+	}
+	.close-div{
+		width: 100%;
+		background-color: #6584D0;
+		color:white;
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+		cursor: pointer;
+	}
+	#banner-game{
+		width: 100%;
+		height:80%;
+	}
+	#links{
+		position: fixed;
+		line-height: 50px;
+		bottom:-50px;
+		width:100%;
+		display: flex;
+		flex-direction:row;
+		flex-wrap: wrap;
+		justify-content:space-around;
+		align-items:center;
+		background-color: white;
+		-webkit-box-shadow: 0px -2px 19px -5px rgba(107,105,107,1);
+-moz-box-shadow: 0px -2px 19px -5px rgba(107,105,107,1);
+box-shadow: 0px -2px 19px -5px rgba(107,105,107,1);
+	}
+	.links-each{
+		cursor: pointer;
+		font-size: 1.2em;
+		color:#525050;
+		width: 300px;
+		text-align: center;
+	}
+	.links-each:hover{
+		color:#6584D0;
+	}
+	#social-links{
+		display: flex;
+		width: 150px;
+		height: 50px;
+		flex-direction:row;
+		flex-wrap: row;
+		justify-content:center;
+		align-items:center;
+	}
+	.social-links-each  img{
+		width:40px;
+		height:40px;
+		margin-right:5px;
+		margin-left: 5px;
+		cursor: pointer;
+	}
+}
+
+
+@media only screen and (max-width: 1000px) {
+    #left{
+
+	}
+	#right{
+
+	}
+}
+
+#main{
+
+}
