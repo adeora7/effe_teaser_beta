@@ -16,12 +16,12 @@
     	overflow-y:scroll; 
     }
 	#right{
-		width:30%;
+		width:40%;
 		height:100%;
 		background-color: #F5F0F0;
 		position: fixed;
 		z-index:3;
-		right: -30%;
+		right: -40%;
     	transition: all 0.4s ease-out;
 	}
 	.close-div{

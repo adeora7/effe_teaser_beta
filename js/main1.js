@@ -1,6 +1,6 @@
 function contactUs(){
 
-	document.getElementById("right").style.right="-30%";
+	document.getElementById("right").style.right="-40%";
 	document.getElementById("left").style.left="0%";
 	TweenMax.staggerFrom(".contact-content-each", 0.5, {
 					y: "350px",
@@ -16,7 +16,7 @@ function campusAmbassador(){
 	document.getElementById("right").style.right="0%";
 }
 function closeCampusAmbassador(){
-	document.getElementById("right").style.right="-30%";
+	document.getElementById("right").style.right="-40%";
 }
 
 function show_details(e){
