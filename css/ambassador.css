@@ -1,0 +1,18 @@
+#ambassador-content{
+	display: flex;
+	flex-direction:column;
+	justify-content:space-around;
+	align-items:center;
+	width: 100%;
+	text-align: left;
+	overflow-y: hidden;
+}
+
+.collapsible {
+	width: 100%;
+}
+
+.collapsible-body ul li {
+	list-style-type: circle;
+	margin: 0 30px;
+}

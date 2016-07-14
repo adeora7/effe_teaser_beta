@@ -9,8 +9,12 @@
 	overflow-y: hidden;
 }
 .contact-content-each{
+<<<<<<< HEAD
 	width: 45%;
 	min-width: 350px;
+=======
+	width: 320px;
+>>>>>>> master
 	height: 110px;
 	padding-bottom: 5px;
 	display: flex;

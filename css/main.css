@@ -306,9 +306,14 @@
 }
 #banner{
   position: absolute;
+<<<<<<< HEAD
   top:-450vh;
   left:20vw;
   width:60vw;
+=======
+  top:-690vh;
+  width:100vw;
+>>>>>>> master
   border:1px solid transparent;
   z-index: 10;
   font-size: 12vh;
@@ -318,7 +323,11 @@
 }
 #date{
   position: absolute;
+<<<<<<< HEAD
   top:-113vh;
+=======
+  top:-190vh;
+>>>>>>> master
   left:60vw;
   font-size: 4vh;
   border:1px solid transparent;
