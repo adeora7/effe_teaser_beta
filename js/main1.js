@@ -1,7 +1,7 @@
 function contactUs(){
 
-	document.getElementById("right").style.right="-40%";
-	document.getElementById("left").style.left="0%";
+	document.getElementById("right").style.right="-320px";
+	document.getElementById("left").style.left="0px";
 	TweenMax.staggerFrom(".contact-content-each", 0.5, {
 					y: "350px",
 				opacity: 1,
@@ -9,14 +9,14 @@ function contactUs(){
 			},0.2);
 }
 function closeContactUs(){
-	document.getElementById("left").style.left="-30%";
+	document.getElementById("left").style.left="-335px";
 }
 function campusAmbassador(){
-	document.getElementById("left").style.left="-30%";
-	document.getElementById("right").style.right="0%";
+	document.getElementById("left").style.left="-335px";
+	document.getElementById("right").style.right="0px";
 }
 function closeCampusAmbassador(){
-	document.getElementById("right").style.right="-40%";
+	document.getElementById("right").style.right="-320px";
 }
 
 function show_details(e){

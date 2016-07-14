@@ -4,24 +4,23 @@
 	padding: 0px;
 }
 
-@media only screen and (min-width: 1000px) {
     #left{
-    	width:30%;
+    	width:335px;
     	height:100%;
     	background-color: #F5F0F0;
     	position: fixed;
     	z-index: 3;
-    	left: -30%;
+    	left: -335px;
     	transition: all 0.4s ease-out;
     	overflow-y:scroll; 
     }
 	#right{
-		width:40%;
+		width:320px;
 		height:100%;
 		background-color: #F5F0F0;
 		position: fixed;
 		z-index:3;
-		right: -40%;
+		right: -320px;
     	transition: all 0.4s ease-out;
 	}
 	.close-div{
@@ -39,12 +38,12 @@
 	}
 	#links{
 		position: fixed;
-		line-height: 50px;
 		bottom:-50px;
+		height:50px;
 		width:100%;
 		display: flex;
 		flex-direction:row;
-		flex-wrap: wrap;
+		flex-wrap: no-wrap;
 		justify-content:space-around;
 		align-items:center;
 		background-color: white;
@@ -54,7 +53,7 @@ box-shadow: 0px -2px 19px -5px rgba(107,105,107,1);
 	}
 	.links-each{
 		cursor: pointer;
-		font-size: 1.2em;
+		font-size: 1em;
 		color:#525050;
 		width: 300px;
 		text-align: center;
@@ -78,17 +77,6 @@ box-shadow: 0px -2px 19px -5px rgba(107,105,107,1);
 		margin-left: 5px;
 		cursor: pointer;
 	}
-}
-
-
-@media only screen and (max-width: 1000px) {
-    #left{
-
-	}
-	#right{
-
-	}
-}
 
 #main{
 

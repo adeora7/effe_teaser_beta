@@ -1,3 +1,16 @@
+$(document).ready(function(){
+  if(screen.width < 900)
+  {
+    $(window).scrollTop($(window).height());
+    $("#quote").hide();
+    $("#logo").css('top', '23vh');
+    $("#banner").css('top', '45vh');
+    $("#banner").css('font-size', '10vw');
+    $("#date").css('top', '58vh');
+    $("#date").css('font-size', '5vw');
+  }
+
+});
 var allow = 1;
 $("#date").hide();
 $.fn.moveIt = function(){
@@ -45,6 +58,10 @@ window.addEventListener('scroll', function() {
    if(allow==1){
    if($(window).height() - $(window).scrollTop() == window.innerHeight) {
        //alert("bottom!");
+       $(".image").hide();
+       $("#logo").show();
+       $(".red-light").hide();
+       $(".blue-light").hide();
        $("#banner").html("");
        $("#date").hide();
        setTimeout(write, 500, "EFFERVESCENCE", 0);
