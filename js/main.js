@@ -1,4 +1,11 @@
+var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+var firstDate = new Date(2016,10,15);
+var secondDate = new Date();
+
+var diffDays = Math.round(Math.abs((firstDate.getTime() - secondDate.getTime())/(oneDay)));
+$("#days").append("<span style='color:#6380C7;font-family:nb;font-size:18px;'>" + diffDays + " </span> <span style='color:#D85974;font-family:nb;font-size:18px;'>days to go</span>");
 $(document).ready(function(){
+  $("#loader").fadeOut("slow");
   if(screen.width < 900)
   {
     $(window).scrollTop($(window).height());

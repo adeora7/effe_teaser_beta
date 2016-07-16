@@ -1,0 +1,47 @@
+@import url('http://fonts.googleapis.com/css?family=Gafata');
+
+
+.bubbles span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+  margin: 150px auto;
+  background: $terra-rosa;
+  @include border-radius(50%);
+  animation: bubbly .9s infinite alternate;
+}
+
+/* Bubbles */
+#bubble2 { animation-delay: .27s; }
+#bubble3 { animation-delay: .54s; }
+
+@-webkit-keyframes bubbly {
+  0% {
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    width: 50px;
+    height: 50px;
+    opacity: 0.1;
+    transform: translateY(-32px);
+  }
+}
+
+@-moz-keyframes bubbly {
+  0% {
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    width: 50px;
+    height: 50px;
+    opacity: 0.1;
+    transform: translateY(-32px);
+  }
+}
