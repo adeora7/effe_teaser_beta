@@ -2,11 +2,7 @@ function contactUs(){
 
 	document.getElementById("right").style.right="-320px";
 	document.getElementById("left").style.left="0px";
-	TweenMax.staggerFrom(".contact-content-each", 0.5, {
-					y: "350px",
-				opacity: 1,
-				ease: Power2.easeOut
-			},0.2);
+	
 }
 function closeContactUs(){
 	document.getElementById("left").style.left="-335px";

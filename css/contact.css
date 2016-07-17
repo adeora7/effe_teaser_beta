@@ -1,3 +1,7 @@
+.bb{
+	border-bottom: 1px solid #D8D0D0;
+	margin-bottom: 20px;
+}
 #contact-content{
 	display: flex;
 	flex-direction:column;
@@ -6,15 +10,16 @@
 	width: 100%;
 	text-align: left;
 	overflow-y: hidden;
+	overflow-x:hidden; 
 }
 .contact-content-each{
 	width: 320px;
-	height: 110px;
+	height: 120px;
 	padding-bottom: 5px;
 	display: flex;
 	flex-direction:row;
-	border-bottom:1px solid gray;
-	margin-bottom: 40px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	color:#5A5A5A; 
 }
 .contact-content-each > img:nth-child(1){
