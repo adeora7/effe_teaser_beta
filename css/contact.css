@@ -64,8 +64,8 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 
 @media screen and (min-width: 1000px) {
     #contact-window {
-        margin-left: -17.5%;
-        width:35%;
+        margin-left: -200px;
+        width:400px;
     }
 }
 @media screen and (max-width: 999px){
