@@ -6,8 +6,8 @@ var diffDays = Math.round(Math.abs((firstDate.getTime() - secondDate.getTime())/
 $("#days").append("<span style='color:#6380C7;font-family:nb;font-size:18px;'>" + diffDays + " </span> <span style='color:#D85974;font-family:nb;font-size:18px;'>days to go</span>");
 $(document).ready(function(){
   $("#loader").fadeOut("slow");
-  $('#downButton').fadeOut(0);
   $('html, body').animate({scrollTop: 0 }, 0);
+  $('#downButton').fadeOut(0);
   if(screen.width < 900)
   {
     $(window).scrollTop($(window).height());
@@ -26,10 +26,12 @@ $('#downButton').click(function() {
 			
 			   $('html, body').animate({scrollTop: 100000 }, 100000);
    				console.log(x);
-   				  $('#downButton').fadeOut(1000);
+   			  $('#downButton').fadeOut(1000);
+          dbtn = 1;
   });
 		
 var allow = 1;
+var dbtn = 0;
 $("#date").hide();
 $.fn.moveIt = function(){
   var $window = $(window);
@@ -74,8 +76,12 @@ $(function(){
 
 window.addEventListener('scroll', function() {
    if(allow==1){
-    $('#downButton').fadeIn(1000);
-   if($(window).height() - $(window).scrollTop() == window.innerHeight) {
+    if(dbtn == 0 && $(window).scrollTop() > 0)
+    {
+      $("#downButton").fadeIn(1000);
+      dbtn = 1;
+    }
+    if($(window).height() - $(window).scrollTop() == window.innerHeight) {
        //alert("bottom!");
        $('#downButton').fadeOut(1000);
        $(".image").hide();
@@ -87,9 +93,9 @@ window.addEventListener('scroll', function() {
        setTimeout(write, 500, "EFFERVESCENCE", 0);
        setTimeout(staggerlinks, 2700);
        allow = 0;
-   }
+    }
 
- }
+  }
 });
 
 
