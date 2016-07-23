@@ -16,8 +16,18 @@ $(document).ready(function(){
     $("#date").css('top', '58vh');
     $("#date").css('font-size', '5vw');
   }
+$('html, body').animate({scrollTop: 0 }, 100);
 
 });
+$('#downButton').click(function() {
+			//alert("hello");
+			x = document.getElementById("ten");
+			
+			   $('html, body').animate({scrollTop: 100000 }, 200000);
+   				console.log(x);
+   				  $('#downButton').fadeOut(1000);
+  });
+		
 var allow = 1;
 $("#date").hide();
 $.fn.moveIt = function(){
